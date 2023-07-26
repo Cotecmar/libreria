@@ -1,19 +1,13 @@
 {
-    "name": "gbuelvas/biblioteca_cotecmar",
-    "description": "Biblioteca de librerias comunes para COTECMAR",
+    "name": "gbuelvas/libreria",
+    "description": "librerias de nombres cotecmar",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Gbuelvas\\BibliotecaCotecmar\\": "src/"
+            "Gbuelvas\\Libreria\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "gbuelvas",
-            "email": "gbuelvas@cotecmar.com"
-        }
-    ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {}
 }
