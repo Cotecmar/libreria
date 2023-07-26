@@ -9,4 +9,9 @@ class libreria
     {
         return 'Cotecmar';
     }
+
+    public static function empresaHola()
+    {
+        return 'Cotecmar';
+    }
 }
