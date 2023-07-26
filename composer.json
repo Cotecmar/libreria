@@ -1,13 +1,19 @@
 {
-    "name": "gbuelvas/libreria",
-    "description": "librerias de nombres cotecmar",
+    "name": "Cotecmar/Servicio",
+    "description": "librerias de cotecmar",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Gbuelvas\\Libreria\\": "src/"
+            "Cotecmar\\Servicio\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Cotecmar",
+            "email": "dibarra@cotecmar.com"
+        }
+    ],
+    "minimum-stability": "stable",
     "require": {}
 }
