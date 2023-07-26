@@ -1,16 +1,16 @@
 {
-    "name": "cotecmar/servicio",
-    "description": "librerias de cotecmar",
+    "name": "cotecmar/libreria",
+    "description": "Paquete de Cotecmar",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "cotecmar\\servicio\\": "src/"
+            "Cotecmar\\Libreria\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Cotecmar",
+            "name": "Deivi Ibarra Negrette",
             "email": "dibarra@cotecmar.com"
         }
     ],
