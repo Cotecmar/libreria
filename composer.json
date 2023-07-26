@@ -1,11 +1,11 @@
 {
-    "name": "Cotecmar/Servicio",
+    "name": "cotecmar/servicio",
     "description": "librerias de cotecmar",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Cotecmar\\Servicio\\": "src/"
+            "ctecmar\\servicio\\": "src/"
         }
     },
     "authors": [
