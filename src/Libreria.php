@@ -7,6 +7,6 @@ class libreria
 
     public static function empresa()
     {
-        return 'Cotecmar';
+        return 'Cotecmar prueba';
     }
 }
