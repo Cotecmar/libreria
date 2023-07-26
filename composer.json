@@ -14,6 +14,6 @@
             "email": "dibarra@cotecmar.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {}
 }
