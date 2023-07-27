@@ -20,4 +20,9 @@ class Main
             new ObjectGeneral(10, 'GECTI', 'Gerencia Ciencia Tecnologia e Innovación')
         ];
     }
+
+    public static function hola()
+    {
+        return 'hola';
+    }
 }
