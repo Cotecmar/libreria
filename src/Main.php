@@ -23,6 +23,6 @@ class Main
 
     public static function hola()
     {
-        return 'hola';
+        return 'hola3';
     }
 }
