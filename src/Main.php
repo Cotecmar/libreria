@@ -26,7 +26,6 @@ class Main
 
     public static function gerenciasSAP($gerenciaSAP)
     {
-        return 'estoy por aqui';
         if ($gerenciaSAP == 'FADM') //	GERENCIA FINANCIERA Y ADMINISTRATIVA	
             return self::gerencias()[4];
         else if ($gerenciaSAP == 'VICE') //	VICEPRESIDENCIA EJECUTIVA	
