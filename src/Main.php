@@ -27,25 +27,25 @@ class Main
     public static function GerenciasSAP($gerenciaSAP)
     {
         if ($gerenciaSAP == 'FADM') //	GERENCIA FINANCIERA Y ADMINISTRATIVA	
-            return 'GEFAD';
+            return self::gerencias()[4];
         if ($gerenciaSAP == 'VICE') //	VICEPRESIDENCIA EJECUTIVA	
-            return 'VPEXE';
+            return self::gerencias()[2];
         if ($gerenciaSAP == 'DING') //	GERENCIA DISEÑO E INGENIERIA	
-            return 'GEDIN';
+            return self::gerencias()[9];
         if ($gerenciaSAP == 'BGDE') //	GERENCIA PLANTA BOCAGRANDE	
-            return 'GEBOG';
+            return self::gerencias()[7];
         if ($gerenciaSAP == 'MNAL') //	GERENCIA PLANTA MAMONAL	
-            return 'GEMAM';
+            return self::gerencias()[6];
         if ($gerenciaSAP == 'VICO') //	VICEPRESIDENCIA TECNOLOGICA Y DE OPERACIONES	
-            return 'VPT&O';
+            return self::gerencias()[3];
         if ($gerenciaSAP == 'PRES') //	PRESIDENCIA	
-            return 'PCTMAR';
+            return self::gerencias()[1];
         if ($gerenciaSAP == 'CTIN') //	GERENCIA DE CIENCIA, TECNOLOGIA E INNOVACION	
-            return 'GECTI';
+            return self::gerencias()[10];
         if ($gerenciaSAP == 'CONS') //	GERENCIA CONSTRUCCIONES	
-            return 'GECON';
+            return self::gerencias()[8];
         if ($gerenciaSAP == 'THUM') //	GERENCIA TALENTO HUMANO	
-            return 'GETHU';
+            return self::gerencias()[5];
         return '';
     }
 
