@@ -2,6 +2,9 @@
 
 namespace Cotecmar\Servicio;
 
+use Illuminate\Support\Str;
+use Carbon\Carbon;
+
 class Main
 {
 
@@ -21,8 +24,42 @@ class Main
         ];
     }
 
-    public static function hola()
+    public static function CONTARFECHASEnMes($fechainicio, $fechafinal)
     {
-        return 'hola3';
+        return (($fechafinal->year - $fechainicio->year) * 12) + $fechafinal->month - $fechainicio->month;
+    }
+
+    public static function FechaConvertirSAP($fecha)
+    {
+        $año = substr($fecha, 0, 4);
+        $mes = substr($fecha, 4, 2);
+        $dia = substr($fecha, 6, 2);
+        $fechaMin = Carbon::createFromDate($año, $mes, $dia);
+        return $fechaMin;
+    }
+
+    public static function ConvertirFechaNumero($fecha)
+    {
+        $año = $fecha->year;
+        $mes = self::RellenarCerrosIzquierda($fecha->month, 2);
+        $dia = self::RellenarCerrosIzquierda($fecha->day, 2);
+        return ($año . $mes . $dia);
+    }
+
+    public static function RellenarCerrosIzquierda($numero, $longitud)
+    {
+        if (Str::length($numero) < $longitud) {
+            return self::RellenarEspaciosVariable("0", $longitud - Str::length($numero)) . $numero;
+        }
+        return substr($numero, 0, $longitud);
+    }
+
+    public static function RellenarEspaciosVariable($variable, $longitud)
+    {
+        $var = "";
+        do {
+            $var = $var . $variable;
+        } while (Str::length($var) < $longitud);
+        return substr($var, 0, $longitud);
     }
 }
