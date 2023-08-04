@@ -26,48 +26,48 @@ class Main
 
     public static function gerenciasSAP($gerenciaSAP)
     {
-
+        $gerencia = [];
         if ($gerenciaSAP == 'FADM') //	GERENCIA FINANCIERA Y ADMINISTRATIVA	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 4;
             });
         else if ($gerenciaSAP == 'VICE') //	VICEPRESIDENCIA EJECUTIVA	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 2;
             });
         else if ($gerenciaSAP == 'DING') //	GERENCIA DISEÑO E INGENIERIA	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 9;
             });
         else if ($gerenciaSAP == 'BGDE') //	GERENCIA PLANTA BOCAGRANDE	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 7;
             });
         else if ($gerenciaSAP == 'MNAL') //	GERENCIA PLANTA MAMONAL	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 6;
             });
         else if ($gerenciaSAP == 'VICO') //	VICEPRESIDENCIA TECNOLOGICA Y DE OPERACIONES	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 3;
             });
         else if ($gerenciaSAP == 'PRES') //	PRESIDENCIA	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 1;
             });
         else if ($gerenciaSAP == 'CTIN') //	GERENCIA DE CIENCIA, TECNOLOGIA E INNOVACION	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 10;
             });
         else if ($gerenciaSAP == 'CONS') //	GERENCIA CONSTRUCCIONES	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 8;
             });
         else if ($gerenciaSAP == 'THUM') //	GERENCIA TALENTO HUMANO	
-            return array_filter(Main::gerencias(), function ($gerencia) {
+            $gerencia = array_filter(Main::gerencias(), function ($gerencia) {
                 return $gerencia->id == 5;
             });
-        return '';
+        return reset($gerencia);
     }
 
 
