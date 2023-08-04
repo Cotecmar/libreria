@@ -8,7 +8,7 @@ use Carbon\Carbon;
 class Main
 {
 
-    public static function Gerencias()
+    public static function gerencias()
     {
         return [
             new ObjectGeneral(1, 'PCTMAR', 'Presidencia'),
@@ -24,7 +24,7 @@ class Main
         ];
     }
 
-    public static function GerenciasSAP($gerenciaSAP)
+    public static function gerenciasSAP($gerenciaSAP)
     {
         if ($gerenciaSAP == 'FADM') //	GERENCIA FINANCIERA Y ADMINISTRATIVA	
             return self::gerencias()[4];
@@ -50,12 +50,12 @@ class Main
     }
 
 
-    public static function CONTARFECHASEnMes($fechainicio, $fechafinal)
+    public static function contarFechasEnMes($fechainicio, $fechafinal)
     {
         return (($fechafinal->year - $fechainicio->year) * 12) + $fechafinal->month - $fechainicio->month;
     }
 
-    public static function FechaConvertirSAP($fecha)
+    public static function fechaConvertirSAP($fecha)
     {
         $año = substr($fecha, 0, 4);
         $mes = substr($fecha, 4, 2);
@@ -64,23 +64,23 @@ class Main
         return $fechaMin;
     }
 
-    public static function ConvertirFechaNumero($fecha)
+    public static function convertirFechaNumero($fecha)
     {
         $año = $fecha->year;
-        $mes = self::RellenarCerrosIzquierda($fecha->month, 2);
-        $dia = self::RellenarCerrosIzquierda($fecha->day, 2);
+        $mes = self::rellenarCerrosIzquierda($fecha->month, 2);
+        $dia = self::rellenarCerrosIzquierda($fecha->day, 2);
         return ($año . $mes . $dia);
     }
 
-    public static function RellenarCerrosIzquierda($numero, $longitud)
+    public static function rellenarCerrosIzquierda($numero, $longitud)
     {
         if (Str::length($numero) < $longitud) {
-            return self::RellenarEspaciosVariable("0", $longitud - Str::length($numero)) . $numero;
+            return self::rellenarEspaciosVariable("0", $longitud - Str::length($numero)) . $numero;
         }
         return substr($numero, 0, $longitud);
     }
 
-    public static function RellenarEspaciosVariable($variable, $longitud)
+    public static function rellenarEspaciosVariable($variable, $longitud)
     {
         $var = "";
         do {
