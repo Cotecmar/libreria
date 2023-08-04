@@ -28,23 +28,23 @@ class Main
     {
         if ($gerenciaSAP == 'FADM') //	GERENCIA FINANCIERA Y ADMINISTRATIVA	
             return self::gerencias()[4];
-        if ($gerenciaSAP == 'VICE') //	VICEPRESIDENCIA EJECUTIVA	
+        else if ($gerenciaSAP == 'VICE') //	VICEPRESIDENCIA EJECUTIVA	
             return self::gerencias()[2];
-        if ($gerenciaSAP == 'DING') //	GERENCIA DISEÑO E INGENIERIA	
+        else if ($gerenciaSAP == 'DING') //	GERENCIA DISEÑO E INGENIERIA	
             return self::gerencias()[9];
-        if ($gerenciaSAP == 'BGDE') //	GERENCIA PLANTA BOCAGRANDE	
+        else if ($gerenciaSAP == 'BGDE') //	GERENCIA PLANTA BOCAGRANDE	
             return self::gerencias()[7];
-        if ($gerenciaSAP == 'MNAL') //	GERENCIA PLANTA MAMONAL	
+        else if ($gerenciaSAP == 'MNAL') //	GERENCIA PLANTA MAMONAL	
             return self::gerencias()[6];
-        if ($gerenciaSAP == 'VICO') //	VICEPRESIDENCIA TECNOLOGICA Y DE OPERACIONES	
+        else if ($gerenciaSAP == 'VICO') //	VICEPRESIDENCIA TECNOLOGICA Y DE OPERACIONES	
             return self::gerencias()[3];
-        if ($gerenciaSAP == 'PRES') //	PRESIDENCIA	
+        else if ($gerenciaSAP == 'PRES') //	PRESIDENCIA	
             return self::gerencias()[1];
-        if ($gerenciaSAP == 'CTIN') //	GERENCIA DE CIENCIA, TECNOLOGIA E INNOVACION	
+        else if ($gerenciaSAP == 'CTIN') //	GERENCIA DE CIENCIA, TECNOLOGIA E INNOVACION	
             return self::gerencias()[10];
-        if ($gerenciaSAP == 'CONS') //	GERENCIA CONSTRUCCIONES	
+        else if ($gerenciaSAP === 'CONS') //	GERENCIA CONSTRUCCIONES	
             return self::gerencias()[8];
-        if ($gerenciaSAP == 'THUM') //	GERENCIA TALENTO HUMANO	
+        else if ($gerenciaSAP == 'THUM') //	GERENCIA TALENTO HUMANO	
             return self::gerencias()[5];
         return '';
     }
