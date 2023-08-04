@@ -8,7 +8,7 @@ use Carbon\Carbon;
 class Main
 {
 
-    public static function gerencias()
+    public static function Gerencias()
     {
         return [
             new ObjectGeneral(1, 'PCTMAR', 'Presidencia'),
@@ -23,6 +23,32 @@ class Main
             new ObjectGeneral(10, 'GECTI', 'Gerencia Ciencia Tecnologia e Innovación')
         ];
     }
+
+    public static function GerenciasSAP($gerenciaSAP)
+    {
+        if ($gerenciaSAP == 'FADM') //	GERENCIA FINANCIERA Y ADMINISTRATIVA	
+            return 'GEFAD';
+        if ($gerenciaSAP == 'VICE') //	VICEPRESIDENCIA EJECUTIVA	
+            return 'VPEXE';
+        if ($gerenciaSAP == 'DING') //	GERENCIA DISEÑO E INGENIERIA	
+            return 'GEDIN';
+        if ($gerenciaSAP == 'BGDE') //	GERENCIA PLANTA BOCAGRANDE	
+            return 'GEBOG';
+        if ($gerenciaSAP == 'MNAL') //	GERENCIA PLANTA MAMONAL	
+            return 'GEMAM';
+        if ($gerenciaSAP == 'VICO') //	VICEPRESIDENCIA TECNOLOGICA Y DE OPERACIONES	
+            return 'VPT&O';
+        if ($gerenciaSAP == 'PRES') //	PRESIDENCIA	
+            return 'PCTMAR';
+        if ($gerenciaSAP == 'CTIN') //	GERENCIA DE CIENCIA, TECNOLOGIA E INNOVACION	
+            return 'GECTI';
+        if ($gerenciaSAP == 'CONS') //	GERENCIA CONSTRUCCIONES	
+            return 'GECON';
+        if ($gerenciaSAP == 'THUM') //	GERENCIA TALENTO HUMANO	
+            return 'GETHU';
+        return '';
+    }
+
 
     public static function CONTARFECHASEnMes($fechainicio, $fechafinal)
     {
