@@ -4,9 +4,9 @@ namespace Cotecmar\Servicio;
 
 class ObjectGeneral
 {
-    protected $id;
-    protected $name;
-    protected $descripcion;
+    public $id;
+    public $name;
+    public $descripcion;
 
     function __construct($id, $name, $descripcion)
     {
