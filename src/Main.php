@@ -109,4 +109,11 @@ class Main
         } while (Str::length($var) < $longitud);
         return substr($var, 0, $longitud);
     }
+
+    public static function UnidadesNegocio(){
+        return [
+            new ObjectGeneral(1, 'BGD', 'Bocagrande'),
+            new ObjectGeneral(1, 'MAM', 'Mamonal'),
+        ];
+    }
 }
