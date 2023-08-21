@@ -24,6 +24,24 @@ class Main
         ];
     }
 
+     public static function gruposConstructivos()
+    {
+        return [
+            new ObjectGeneral(0, '000', 'GENERALIDADES Y ADMINISTRACIÃN'),
+            new ObjectGeneral(1, '100', 'ESTRUCTURA DEL CASCO'),
+            new ObjectGeneral(2, '200', 'PLANTA PROPULSORA'),
+            new ObjectGeneral(3, '300', 'PLANTA ELÉCTRICA'),
+            new ObjectGeneral(4, '400', 'MANDO Y ESPLORACIÓN'),
+            new ObjectGeneral(5, '500', 'SISTEMAS AUXILIARES'),
+            new ObjectGeneral(6, '600', 'ACABADOS Y AMOBLAMIENTO'),
+            new ObjectGeneral(7, '700', 'SISTEMA DE ARMAS'),
+            new ObjectGeneral(8, '800', 'INTEGRACIÓN/INGENIERÍA'),
+            new ObjectGeneral(9, '900', 'MONTAJE DEL BUQUE Y SERVICIOS DE APOYOS'),
+         
+        ];
+    }
+
+
     public static function gerenciasSAP($gerenciaSAP)
     {
         $gerencia = [];
