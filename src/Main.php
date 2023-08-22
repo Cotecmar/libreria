@@ -27,7 +27,7 @@ class Main
      public static function gruposConstructivos()
     {
         return [
-            new ObjectGeneral(0, '000', 'GENERALIDADES Y ADMINISTRACIÃN'),
+            new ObjectGeneral(0, '000', 'GENERALIDADES Y ADMINISTRACIÓN'),
             new ObjectGeneral(1, '100', 'ESTRUCTURA DEL CASCO'),
             new ObjectGeneral(2, '200', 'PLANTA PROPULSORA'),
             new ObjectGeneral(3, '300', 'PLANTA ELÉCTRICA'),
